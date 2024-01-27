@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat&family=Rampart+One&display=swap");
+
+font-family: "Bungee Shade", sans-serif;
+font-family: "Montserrat", sans-serif;
+font-family: "Rampart One", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #131e25;
+}
+.container {
+  margin: 10px;
+  padding: 2rem;
+}
+
+h1 {
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family: "Bungee Shade", sans-serif;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.navbar {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+}
+
+.navbar a {
+  /* display: inline-block; */
+  background-color: #d2b48c;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  width: 100px; /* Neden Width almıyor */
+  text-align: center;
+  color: white;
+}
+
+.a1:hover,
+.a2:hover,
+.a3:hover,
+.a4:hover {
+  color: red;
+  background-color: #d2b48c90;
+  transition: 0.5s;
+  box-shadow: 7px 4px 5px rgb(204, 136, 136);
+}
+
+.text {
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Rampart One", sans-serif;
+  font-size: 3em;
+  color: #d2b48c;
+  text-shadow: 2px 2px 3px black;
+  text-align: center;
+}
+.baslik {
+  width: 8rem;
+  margin: auto;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 40px 20px 40px;
+
+}
+.img img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin: 10px;
+    
+    
+}
+.img img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow:4px 4px 20px white ;
+    /* width: 400px;
+    height: 400px; */
+    transition: 1s;
+}
+
+
+.baslik2 {
+    width: 8rem;
+    margin: auto;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+ 
