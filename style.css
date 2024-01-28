@@ -15,6 +15,7 @@ body {
 .container {
   margin: 10px;
   padding: 2rem;
+  position: relative;
 }
 
 h1 {
@@ -73,41 +74,195 @@ h1 {
   border-bottom: 2px solid white;
 }
 
-
-.projects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 60px 40px 20px 40px;
-
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px 40px 20px 40px;
 }
-.img img{
-    width: 300px;
+.img img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+
+  /* justify-content: center;
+  flex-wrap: wrap; */
+  margin: 10px;
+}
+.img img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  box-shadow: 4px 4px 20px white;
+  width: 400px;
     height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-   
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    margin: 10px;
-    
-    
+  transition: 1s;
 }
-.img img:hover{
-    cursor: pointer;
-    opacity: 0.7;
-    box-shadow:4px 4px 20px white ;
-    /* width: 400px;
-    height: 400px; */
-    transition: 1s;
-}
-
 
 .baslik2 {
-    width: 8rem;
-    margin: auto;
-    color: white;
-    border-bottom: 2px solid white;
-  }
+  width: 8rem;
+  margin: auto;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-top: 15rem;
+  font-size: 24px;
+}
+
+.navBottom {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.navBottom nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
  
+  
+}
+.navBottom a{
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 20px;
+ font-weight: bold;
+ color: #d2b48c;
+
+}
+
+.navBottom a:hover{
+  color: red;
+  font-size: xx-large;
+  transition: 1s;
+  text-shadow: 4px 4px 20px wheat;
+
+}
+
+.form{
+  /* display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; */
+  
+}
+.sendmsg{
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+.formAction form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formAction form input,
+.formAction form textarea,
+.formAction form button {
+  margin-bottom: 10px; 
+}
+
+/* buradaki problemi anlamadım */
+
+#UserName{
+
+  border: 3px solid #d2b48c;
+  border-radius: 4px;
+  width: 50%;
+  height: 2.7rem;
+  text-align: center;
+  background-color: #131e25;
+  font-weight: 500;
+  font-size:18px;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+#Email{
+
+  border: 3px solid #d2b48c;
+  border-radius: 4px;
+  width: 50%;
+  height: 2.7rem;
+  text-align: center;
+  background-color: #131e25;
+  font-weight: 500;
+  font-size:18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#txt{
+padding-top: 1rem;
+  resize: none;
+  border: 3px solid #d2b48c;
+  border-radius: 4px;
+  width: 50%;
+  height: 15rem;
+  background-color: #131e25;
+  text-align: center;
+  font-weight: 500;
+  font-size:18px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button{
+  border: 3px solid #d2b48c;
+  border-radius: 4px;
+  width: 51%;
+  height: 2.7rem;
+  text-align: center;
+  background-color: #d2b48c;
+  font-weight: 500;
+  font-size:24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+
+}
+button:hover{
+  color: red;
+  text-shadow: -4px 4px 3px red;
+  height: 3rem;
+  transition: 1s;
+
+
+}.fixed{
+  
+  margin-right: 10px;
+}
+
+.fixed a{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  width:90px ;
+  /* border: 2px solid red; */
+  background-color: #d2b48c;
+  display: inline-block;
+  margin-right:30px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  color: white;
+
+
+}
+
+.fixed a:hover{
+  color: red;
+}
+
+
+
